@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simple Invoice Tracker Excel Spreadsheet | DatumScribe</title>
+  <meta name="description" content="Track invoice amounts, cumulative payments, outstanding balances and overdue status in one simple Excel workbook. Includes sample rows and room for 100 invoices.">
+  <link rel="canonical" href="https://datumscribe.github.io/invoice-tracker/">
+  <meta property="og:type" content="product">
+  <meta property="og:title" content="Simple invoice and payment tracker for Excel">
+  <meta property="og:description" content="Track billed amounts, cumulative payments and balances in one workbook. One .xlsx file with sample entries and 100 prepared invoice rows.">
+  <meta property="og:image" content="https://datumscribe.github.io/invoice-tracker/preview.png">
+  <meta property="og:url" content="https://datumscribe.github.io/invoice-tracker/">
+  <meta name="color-scheme" content="light">
+  <style>
+    :root { color-scheme: light; --ink: #183247; --muted: #526878; --paper: #fff; --wash: #f1f5f7; --line: #d9e2e8; --blue: #174f73; --blue-dark: #103a56; --green: #e9f3ed; }
+    * { box-sizing: border-box; min-width: 0; }
+    html, body { width: 100%; margin: 0; }
+    body { margin: 0; background: var(--wash); color: var(--ink); font: 17px/1.6 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    a { color: var(--blue); }
+    a:focus-visible { outline: 3px solid #bf6d12; outline-offset: 4px; }
+    .wrap { width: 100%; max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+    header { background: #1c3a4d; color: white; padding: 24px 0 48px; }
+    .brand { margin: 0 0 28px; color: #d9e8f0; font-size: 14px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+    h1 { max-width: 760px; margin: 0; font-size: clamp(2.2rem, 6vw, 4.1rem); line-height: 1.08; letter-spacing: -.035em; overflow-wrap: anywhere; }
+    .lede { max-width: 680px; margin: 20px 0 28px; color: #e1ebf0; font-size: 1.2rem; overflow-wrap: anywhere; }
+    .button { display: inline-block; padding: 13px 20px; border-radius: 8px; background: #f1c15b; color: #173348; font-weight: 750; text-decoration: none; }
+    .button:hover { background: #ffd576; }
+    main { padding: 38px 0 56px; }
+    .preview { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: 12px; box-shadow: 0 12px 30px #18324712; }
+    .caption { margin: 10px 0 36px; color: var(--muted); font-size: .9rem; }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 18px; }
+    section { padding: 22px 24px; background: var(--paper); border: 1px solid var(--line); border-radius: 12px; }
+    h2 { margin: 0 0 12px; font-size: 1.25rem; line-height: 1.25; }
+    p { margin: 0 0 12px; overflow-wrap: anywhere; }
+    li { overflow-wrap: anywhere; }
+    ul { margin: 0; padding-left: 22px; }
+    li + li { margin-top: 8px; }
+    .full { grid-column: 1 / -1; }
+    .note { padding: 14px 16px; border-left: 4px solid #397a58; background: var(--green); }
+    footer { padding: 24px 0 36px; color: var(--muted); font-size: .9rem; }
+    footer p { margin: 6px 0; }
+    @media (max-width: 700px) { .grid { grid-template-columns: 1fr; } .full { grid-column: auto; } .wrap { padding: 0 18px; } header { padding-bottom: 38px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <p class="brand">DatumScribe</p>
+      <h1>Simple invoice and payment tracker for Excel</h1>
+      <p class="lede">Track invoice amounts, cumulative payments and outstanding balances in one straightforward spreadsheet.</p>
+      <a class="button" href="https://scribebot2.gumroad.com/l/xykdf?utm_source=datumscribe&amp;utm_medium=github_pages&amp;utm_campaign=e03_invoice_tracker">Get the workbook — $9</a>
+    </div>
+  </header>
+  <main class="wrap">
+    <img class="preview" src="preview.png" width="1280" height="760" alt="Spreadsheet preview showing billed, paid and outstanding totals above three sample invoice rows">
+    <p class="caption">One worksheet with sample entries, calculated balances and status for prepared invoice rows.</p>
+    <div class="grid">
+      <section>
+        <h2>See what is paid and still open</h2>
+        <ul>
+          <li>Enter an invoice ID, client, issue and due dates, amount, and cumulative amount paid.</li>
+          <li>See the outstanding balance and a paid, open, overdue or input-warning status.</li>
+          <li>Review totals for valid rows, with space for 100 invoices.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>One Excel workbook</h2>
+        <p>The download includes a single <code>.xlsx</code> file with sample entries to replace. The workbook was tested and recalculated in Microsoft Excel 16.0.</p>
+        <p>Price: $9. Gumroad processes the checkout and file delivery.</p>
+      </section>
+      <section>
+        <h2>What it does not do</h2>
+        <p>It does not send invoices, connect to bank accounts, calculate taxes, keep a payment history, detect duplicate invoice IDs, or support multiple currencies.</p>
+        <p>Rows outside the prepared 100-row area are not included in totals. This is not accounting or tax advice.</p>
+      </section>
+      <section>
+        <h2>Designed for a simple log</h2>
+        <p>Use the amount paid field for the cumulative amount received on each invoice. Replace the sample inputs and leave calculated columns intact.</p>
+        <p>Store any client information securely and make a backup before changing formulas.</p>
+      </section>
+      <section class="full">
+        <p class="note"><strong>Creation disclosure:</strong> This spreadsheet and its listing were created with AI assistance and verified through automated checks and native Excel recalculation.</p>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div class="wrap">
+      <p>DatumScribe · Invoice tracker for Excel</p>
+      <p><a href="https://scribebot2.gumroad.com/l/xykdf?utm_source=datumscribe&amp;utm_medium=github_pages&amp;utm_campaign=e03_invoice_tracker">View the Gumroad listing</a></p>
+    </div>
+  </footer>
+</body>
+</html>
